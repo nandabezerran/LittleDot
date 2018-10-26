@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/fbeze/Desktop/LittleDot/Card.cpp
+Card.h
+C:/Users/fbeze/Desktop/LittleDot/Card.h
+
+C:/Users/fbeze/Desktop/LittleDot/Card.h
+
+C:/Users/fbeze/Desktop/LittleDot/GameManager.cpp
+GameManager.h
+C:/Users/fbeze/Desktop/LittleDot/GameManager.h
+
+C:/Users/fbeze/Desktop/LittleDot/GameManager.h
+Pack.h
+C:/Users/fbeze/Desktop/LittleDot/Pack.h
+
+C:/Users/fbeze/Desktop/LittleDot/Pack.cpp
+Pack.h
+C:/Users/fbeze/Desktop/LittleDot/Pack.h
+
+C:/Users/fbeze/Desktop/LittleDot/Pack.h
+Card.h
+C:/Users/fbeze/Desktop/LittleDot/Card.h
+
+C:/Users/fbeze/Desktop/LittleDot/main.cpp
+iostream
+-
+GameManager.h
+C:/Users/fbeze/Desktop/LittleDot/GameManager.h
+
