@@ -4,7 +4,7 @@
 
 #ifndef LITTLEDOT_PACK_H
 #define LITTLEDOT_PACK_H
-#define NUMBER_OF_CARDS 52
+#define NUMBER_OF_CARDS 104
 
 #include "Card.h"
 
@@ -14,6 +14,8 @@ public:
     Card* cards[NUMBER_OF_CARDS];
 
     Pack();
+
+    Card *drawCard();
 };
 
 

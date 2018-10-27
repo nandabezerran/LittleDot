@@ -6,8 +6,10 @@ using namespace std;
 int main() {
     //Create GameManager
     GameManager gameManager;
-
-    //TODO Initialize the game
+    int nPlayers = 2;
+    
+    // Initialize the game
+    gameManager.init(nPlayers);
     //TODO Call getState
     //TODO Print the result
 

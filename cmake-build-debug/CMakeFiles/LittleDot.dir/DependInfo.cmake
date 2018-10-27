@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/fbeze/Desktop/LittleDot/Card.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/Card.cpp.obj"
   "C:/Users/fbeze/Desktop/LittleDot/GameManager.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/GameManager.cpp.obj"
   "C:/Users/fbeze/Desktop/LittleDot/Pack.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/Pack.cpp.obj"
+  "C:/Users/fbeze/Desktop/LittleDot/Player.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/Player.cpp.obj"
   "C:/Users/fbeze/Desktop/LittleDot/main.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

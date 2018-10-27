@@ -9,8 +9,20 @@ GameManager::GameManager(){
 
 }
 
-void GameManager::init() {
-    //TODO Define number of players
+void GameManager::init(int pPlayers) {
+    //Define number of players
+    nPlayers = pPlayers;
+    players = new Player*[nPlayers];
+
     //TODO Hand out the cards
+    for (int i = 0; i < nPlayers ; ++i) {
+        players[i] = new Player();
+        for (int j = 0; j < 9; ++j) {
+            players[i]->receiveCard(pack->drawCard());
+        }
+
+    }
+
+
 
 }

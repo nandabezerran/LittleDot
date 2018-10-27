@@ -6,14 +6,17 @@
 #define LITTLEDOT_GAMEMANAGER_H
 
 #include "Pack.h"
+#include "Player.h"
 
 class GameManager {
 public:
-    Pack* pack;
-
     GameManager();
-    void init();
+    void init(int pPlayers);
 
+private:
+    Pack* pack;
+    int nPlayers;
+    Player** players;
 };
 
 

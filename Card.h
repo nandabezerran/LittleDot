@@ -16,7 +16,6 @@ class Card {
 public:
     Suit suit;
     int value;
-    bool drawn;
 
     Card(Suit pSuit, int pValue);
 };

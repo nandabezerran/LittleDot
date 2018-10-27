@@ -19,12 +19,26 @@ C:/Users/fbeze/Desktop/LittleDot/GameManager.h
 C:/Users/fbeze/Desktop/LittleDot/GameManager.h
 Pack.h
 C:/Users/fbeze/Desktop/LittleDot/Pack.h
+Player.h
+C:/Users/fbeze/Desktop/LittleDot/Player.h
 
 C:/Users/fbeze/Desktop/LittleDot/Pack.cpp
+stdlib.h
+-
+time.h
+-
 Pack.h
 C:/Users/fbeze/Desktop/LittleDot/Pack.h
 
 C:/Users/fbeze/Desktop/LittleDot/Pack.h
+Card.h
+C:/Users/fbeze/Desktop/LittleDot/Card.h
+
+C:/Users/fbeze/Desktop/LittleDot/Player.cpp
+Player.h
+C:/Users/fbeze/Desktop/LittleDot/Player.h
+
+C:/Users/fbeze/Desktop/LittleDot/Player.h
 Card.h
 C:/Users/fbeze/Desktop/LittleDot/Card.h
 

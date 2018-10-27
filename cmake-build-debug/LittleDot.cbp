@@ -98,6 +98,12 @@
 		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/Pack.h">
 			<Option target="LittleDot"/>
 		</Unit>
+		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/Player.cpp">
+			<Option target="LittleDot"/>
+		</Unit>
+		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/Player.h">
+			<Option target="LittleDot"/>
+		</Unit>
 		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/main.cpp">
 			<Option target="LittleDot"/>
 		</Unit>

@@ -8,13 +8,19 @@ CMakeFiles/LittleDot.dir/GameManager.cpp.obj: ../Card.h
 CMakeFiles/LittleDot.dir/GameManager.cpp.obj: ../GameManager.cpp
 CMakeFiles/LittleDot.dir/GameManager.cpp.obj: ../GameManager.h
 CMakeFiles/LittleDot.dir/GameManager.cpp.obj: ../Pack.h
+CMakeFiles/LittleDot.dir/GameManager.cpp.obj: ../Player.h
 
 CMakeFiles/LittleDot.dir/Pack.cpp.obj: ../Card.h
 CMakeFiles/LittleDot.dir/Pack.cpp.obj: ../Pack.cpp
 CMakeFiles/LittleDot.dir/Pack.cpp.obj: ../Pack.h
 
+CMakeFiles/LittleDot.dir/Player.cpp.obj: ../Card.h
+CMakeFiles/LittleDot.dir/Player.cpp.obj: ../Player.cpp
+CMakeFiles/LittleDot.dir/Player.cpp.obj: ../Player.h
+
 CMakeFiles/LittleDot.dir/main.cpp.obj: ../Card.h
 CMakeFiles/LittleDot.dir/main.cpp.obj: ../GameManager.h
 CMakeFiles/LittleDot.dir/main.cpp.obj: ../Pack.h
+CMakeFiles/LittleDot.dir/main.cpp.obj: ../Player.h
 CMakeFiles/LittleDot.dir/main.cpp.obj: ../main.cpp
 

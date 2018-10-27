@@ -4,6 +4,4 @@
 
 #include "Card.h"
 
-Card::Card(Suit pSuit, int pValue) : suit(pSuit), value(pValue){
-    drawn = false;
-}
+Card::Card(Suit pSuit, int pValue) : suit(pSuit), value(pValue){}

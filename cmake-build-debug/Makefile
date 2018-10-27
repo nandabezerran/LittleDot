@@ -203,6 +203,33 @@ Pack.cpp.s:
 	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Pack.cpp.s
 .PHONY : Pack.cpp.s
 
+Player.obj: Player.cpp.obj
+
+.PHONY : Player.obj
+
+# target to build an object file
+Player.cpp.obj:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Player.cpp.obj
+.PHONY : Player.cpp.obj
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -248,6 +275,9 @@ help:
 	@echo ... Pack.obj
 	@echo ... Pack.i
 	@echo ... Pack.s
+	@echo ... Player.obj
+	@echo ... Player.i
+	@echo ... Player.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
