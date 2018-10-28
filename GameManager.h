@@ -8,6 +8,7 @@
 #include "Pack.h"
 #include "Player.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -16,11 +17,15 @@ public:
     GameManager();
     void init(int pPlayers);
     string getState(int pPlayerId);
+    bool takeAction(int pPlayerId, string pAction);
 
 private:
     Pack* pack;
-    int nPlayers;
     Player** players;
+    int nPlayers;
+    int currPlayer;
+    int nPossibleActions;
+    vector<string> possibleActions;
 };
 
 

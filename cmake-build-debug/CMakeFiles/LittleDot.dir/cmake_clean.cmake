@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LittleDot.dir/Pack.cpp.obj"
   "CMakeFiles/LittleDot.dir/Card.cpp.obj"
   "CMakeFiles/LittleDot.dir/Player.cpp.obj"
+  "CMakeFiles/LittleDot.dir/Discard.cpp.obj"
   "LittleDot.pdb"
   "LittleDot.exe"
   "LittleDot.exe.manifest"

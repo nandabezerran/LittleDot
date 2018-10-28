@@ -11,6 +11,8 @@ Card.h
 C:/Users/fbeze/Desktop/LittleDot/Card.h
 
 C:/Users/fbeze/Desktop/LittleDot/Card.h
+iostream
+-
 
 C:/Users/fbeze/Desktop/LittleDot/GameManager.cpp
 GameManager.h
@@ -21,6 +23,10 @@ Pack.h
 C:/Users/fbeze/Desktop/LittleDot/Pack.h
 Player.h
 C:/Users/fbeze/Desktop/LittleDot/Player.h
+iostream
+-
+vector
+-
 
 C:/Users/fbeze/Desktop/LittleDot/Pack.cpp
 stdlib.h
@@ -41,6 +47,8 @@ C:/Users/fbeze/Desktop/LittleDot/Player.h
 C:/Users/fbeze/Desktop/LittleDot/Player.h
 Card.h
 C:/Users/fbeze/Desktop/LittleDot/Card.h
+iostream
+-
 
 C:/Users/fbeze/Desktop/LittleDot/main.cpp
 iostream

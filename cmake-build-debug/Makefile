@@ -149,6 +149,33 @@ Card.cpp.s:
 	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Card.cpp.s
 .PHONY : Card.cpp.s
 
+Discard.obj: Discard.cpp.obj
+
+.PHONY : Discard.obj
+
+# target to build an object file
+Discard.cpp.obj:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Discard.cpp.obj
+.PHONY : Discard.cpp.obj
+
+Discard.i: Discard.cpp.i
+
+.PHONY : Discard.i
+
+# target to preprocess a source file
+Discard.cpp.i:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Discard.cpp.i
+.PHONY : Discard.cpp.i
+
+Discard.s: Discard.cpp.s
+
+.PHONY : Discard.s
+
+# target to generate assembly for a file
+Discard.cpp.s:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Discard.cpp.s
+.PHONY : Discard.cpp.s
+
 GameManager.obj: GameManager.cpp.obj
 
 .PHONY : GameManager.obj
@@ -269,6 +296,9 @@ help:
 	@echo ... Card.obj
 	@echo ... Card.i
 	@echo ... Card.s
+	@echo ... Discard.obj
+	@echo ... Discard.i
+	@echo ... Discard.s
 	@echo ... GameManager.obj
 	@echo ... GameManager.i
 	@echo ... GameManager.s

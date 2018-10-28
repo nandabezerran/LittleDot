@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/fbeze/Desktop/LittleDot/Card.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/Card.cpp.obj"
+  "C:/Users/fbeze/Desktop/LittleDot/Discard.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/Discard.cpp.obj"
   "C:/Users/fbeze/Desktop/LittleDot/GameManager.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/GameManager.cpp.obj"
   "C:/Users/fbeze/Desktop/LittleDot/Pack.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/Pack.cpp.obj"
   "C:/Users/fbeze/Desktop/LittleDot/Player.cpp" "C:/Users/fbeze/Desktop/LittleDot/cmake-build-debug/CMakeFiles/LittleDot.dir/Player.cpp.obj"

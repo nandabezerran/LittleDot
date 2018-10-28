@@ -16,7 +16,6 @@ public:
     Player();
     void receiveCard(Card* card);
     string getHandState();
-
     string getVisibleState();
 
 private:

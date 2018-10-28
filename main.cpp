@@ -12,7 +12,14 @@ int main() {
     gameManager.init(nPlayers);
 
     //Call getState and print result
-    cout << gameManager.getState(1);
+    cout << gameManager.getState(1) << endl << endl;
+
+    //Executing the action of drawing
+    for (int i = 0; i < nPlayers ; ++i) {
+        gameManager.takeAction(i, "DRAW");
+        cout << gameManager.getState(i) << endl << endl;
+    }
+
 
     return 0;
 }
