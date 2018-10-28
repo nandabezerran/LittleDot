@@ -14,7 +14,6 @@ Pack::Pack() {
             cards[j + (i * 13)] = new Card((Suit)(i%4), j+1);
         }
     }
-
 }
 
 Card *Pack::drawCard() {
@@ -34,5 +33,4 @@ Card *Pack::drawCard() {
     amount--;
     cards[randNumber] = nullptr;
     return result;
-
 }

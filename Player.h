@@ -7,11 +7,17 @@
 #define HAND_SIZE 10
 
 #include "Card.h"
+#include <iostream>
+
+using namespace std;
 
 class Player {
 public:
     Player();
     void receiveCard(Card* card);
+    string getHandState();
+
+    string getVisibleState();
 
 private:
     Card* hand[HAND_SIZE];

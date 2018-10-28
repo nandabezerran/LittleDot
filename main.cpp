@@ -6,14 +6,13 @@ using namespace std;
 int main() {
     //Create GameManager
     GameManager gameManager;
-    int nPlayers = 2;
-    
-    // Initialize the game
+
+    //Initialize the game
+    int nPlayers = 3;
     gameManager.init(nPlayers);
-    //TODO Call getState
-    //TODO Print the result
 
+    //Call getState and print result
+    cout << gameManager.getState(1);
 
-    cout << "Hello, World!" << endl;
     return 0;
 }

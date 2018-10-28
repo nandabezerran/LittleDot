@@ -5,6 +5,10 @@
 #ifndef LITTLEDOT_CARD_H
 #define LITTLEDOT_CARD_H
 
+#include <iostream>
+
+using namespace std;
+
 enum Suit{
     hearts,
     diamonds,
@@ -16,6 +20,8 @@ class Card {
 public:
     Suit suit;
     int value;
+    static const string *suits;
+
 
     Card(Suit pSuit, int pValue);
 };

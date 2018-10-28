@@ -7,11 +7,15 @@
 
 #include "Pack.h"
 #include "Player.h"
+#include <iostream>
+
+using namespace std;
 
 class GameManager {
 public:
     GameManager();
     void init(int pPlayers);
+    string getState(int pPlayerId);
 
 private:
     Pack* pack;
