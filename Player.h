@@ -8,6 +8,7 @@
 
 #include "Card.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -17,6 +18,8 @@ public:
     void receiveCard(Card* card);
     string getHandState();
     string getVisibleState();
+    Card* searchCard(vector<string> pDiscardParameters);
+    bool removeCard(Card* pCard);
 
 private:
     Card* hand[HAND_SIZE];

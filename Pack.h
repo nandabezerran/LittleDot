@@ -10,7 +10,7 @@
 
 class Pack {
 public:
-    int amount;
+    int packAmount;
     Card* cards[NUMBER_OF_CARDS];
 
     Pack();

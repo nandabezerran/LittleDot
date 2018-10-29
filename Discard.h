@@ -8,13 +8,18 @@
 #include <stack>
 #include "Card.h"
 
+using namespace std;
 
 class Discard {
 public:
     void discardCard(Card* pCard);
 
+    Discard();
+
+
 private:
     stack<Card*> stack;
+    int discardAmount;
 
 };
 

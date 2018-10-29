@@ -1,11 +1,19 @@
 //
 // Created by fbeze on 25/10/2018.
 //
+#define NUMBER_OF_THE_CARD 8
+#define SUIT_OF_THE_CARD 10
 #include "GameManager.h"
+#include <sstream>
+#include <string>
+#include <iostream>
+#include <cstring>
+
 
 GameManager::GameManager(){
     //Create the pack
     pack = new Pack();
+    discard = new Discard();
     possibleActions.emplace_back("DRAW");
 }
 
@@ -72,11 +80,32 @@ bool GameManager::takeAction(int pPlayerId, string pAction) {
         return true;
     }
 
-    //DISCARD(7 hearts) -> this is the discard parameter format
+    //DISCARD 7 hearts -> this is the discard parameter format
     else if (pAction.compare(0, 7, "DISCARD") == 0){
-        //TODO read the discard parameters
-        //TODO implement the discard
+        //TODO improve read the discard parameters
+        //read the discard parameters
+        size_t pos = 0;
+        string token;
+        string delimiter = " ";
+        while ((pos = pAction.find(delimiter)) != std::string::npos) {
+            discardParameters.push_back(pAction.substr(0, pos));
+            pAction.erase(0, pos + delimiter.length());
+        }
+        discardParameters.push_back(pAction.substr(0, pos));
+
+        //Implement the discard
+        if(players[pPlayerId]->searchCard(discardParameters) == nullptr){
+            return false;
+        }
+
+        discard->discardCard(players[pPlayerId]->searchCard(discardParameters));
+        players[pPlayerId]->removeCard(players[pPlayerId]->searchCard(discardParameters));
+
+        possibleActions.clear();
+        possibleActions.emplace_back("DRAW");
         currPlayer = (currPlayer + 1) % nPlayers;
+
+
         return true;
     }
 

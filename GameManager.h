@@ -6,6 +6,7 @@
 #define LITTLEDOT_GAMEMANAGER_H
 
 #include "Pack.h"
+#include "Discard.h"
 #include "Player.h"
 #include <iostream>
 #include <vector>
@@ -18,8 +19,10 @@ public:
     void init(int pPlayers);
     string getState(int pPlayerId);
     bool takeAction(int pPlayerId, string pAction);
+    vector<string> discardParameters;
 
 private:
+    Discard* discard;
     Pack* pack;
     Player** players;
     int nPlayers;

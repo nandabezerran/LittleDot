@@ -7,7 +7,7 @@
 
 Pack::Pack() {
     srand((unsigned int)time(nullptr));
-    amount = NUMBER_OF_CARDS;
+    packAmount = NUMBER_OF_CARDS;
     //Instantiate all the cards
     for (int i = 0; i < 8; ++i) {
         for (int j = 0; j < 13; ++j) {
@@ -17,7 +17,7 @@ Pack::Pack() {
 }
 
 Card *Pack::drawCard() {
-    if (amount == 0){
+    if (packAmount == 0){
         return nullptr;
     }
 
@@ -30,7 +30,7 @@ Card *Pack::drawCard() {
         result = cards[randNumber];
     }
 
-    amount--;
+    packAmount--;
     cards[randNumber] = nullptr;
     return result;
 }
