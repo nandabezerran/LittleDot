@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/Action.cpp">
+			<Option target="LittleDot"/>
+		</Unit>
+		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/Action.h">
+			<Option target="LittleDot"/>
+		</Unit>
 		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/Card.cpp">
 			<Option target="LittleDot"/>
 		</Unit>
@@ -90,6 +96,18 @@
 			<Option target="LittleDot"/>
 		</Unit>
 		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/Discard.h">
+			<Option target="LittleDot"/>
+		</Unit>
+		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/DiscardAction.cpp">
+			<Option target="LittleDot"/>
+		</Unit>
+		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/DiscardAction.h">
+			<Option target="LittleDot"/>
+		</Unit>
+		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/DrawAction.cpp">
+			<Option target="LittleDot"/>
+		</Unit>
+		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/DrawAction.h">
 			<Option target="LittleDot"/>
 		</Unit>
 		<Unit filename="C:/Users/fbeze/Desktop/LittleDot/GameManager.cpp">

@@ -8,6 +8,7 @@
 #include "Pack.h"
 #include "Discard.h"
 #include "Player.h"
+#include "Action.h"
 #include <iostream>
 #include <vector>
 
@@ -20,6 +21,12 @@ public:
     string getState(int pPlayerId);
     bool takeAction(int pPlayerId, string pAction);
     vector<string> discardParameters;
+    Player* getPlayer(int pPlayerId);
+    Pack* getPack();
+    void addPossibleAction(Action* pAction);
+    Action* getAction(const string& pActionName);
+    void removePossibleAction(Action* pAction);
+    Discard* getDiscard();
 
 private:
     Discard* discard;
@@ -28,7 +35,10 @@ private:
     int nPlayers;
     int currPlayer;
     int nPossibleActions;
-    vector<string> possibleActions;
+    vector<Action*> possibleActions;
+    vector<Action*> existingActions;
+
+    void setInitialActions();
 };
 
 

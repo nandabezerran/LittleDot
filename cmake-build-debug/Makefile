@@ -122,6 +122,33 @@ LittleDot/fast:
 	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/build
 .PHONY : LittleDot/fast
 
+Action.obj: Action.cpp.obj
+
+.PHONY : Action.obj
+
+# target to build an object file
+Action.cpp.obj:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Action.cpp.obj
+.PHONY : Action.cpp.obj
+
+Action.i: Action.cpp.i
+
+.PHONY : Action.i
+
+# target to preprocess a source file
+Action.cpp.i:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Action.cpp.i
+.PHONY : Action.cpp.i
+
+Action.s: Action.cpp.s
+
+.PHONY : Action.s
+
+# target to generate assembly for a file
+Action.cpp.s:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Action.cpp.s
+.PHONY : Action.cpp.s
+
 Card.obj: Card.cpp.obj
 
 .PHONY : Card.obj
@@ -175,6 +202,60 @@ Discard.s: Discard.cpp.s
 Discard.cpp.s:
 	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Discard.cpp.s
 .PHONY : Discard.cpp.s
+
+DiscardAction.obj: DiscardAction.cpp.obj
+
+.PHONY : DiscardAction.obj
+
+# target to build an object file
+DiscardAction.cpp.obj:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj
+.PHONY : DiscardAction.cpp.obj
+
+DiscardAction.i: DiscardAction.cpp.i
+
+.PHONY : DiscardAction.i
+
+# target to preprocess a source file
+DiscardAction.cpp.i:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/DiscardAction.cpp.i
+.PHONY : DiscardAction.cpp.i
+
+DiscardAction.s: DiscardAction.cpp.s
+
+.PHONY : DiscardAction.s
+
+# target to generate assembly for a file
+DiscardAction.cpp.s:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/DiscardAction.cpp.s
+.PHONY : DiscardAction.cpp.s
+
+DrawAction.obj: DrawAction.cpp.obj
+
+.PHONY : DrawAction.obj
+
+# target to build an object file
+DrawAction.cpp.obj:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/DrawAction.cpp.obj
+.PHONY : DrawAction.cpp.obj
+
+DrawAction.i: DrawAction.cpp.i
+
+.PHONY : DrawAction.i
+
+# target to preprocess a source file
+DrawAction.cpp.i:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/DrawAction.cpp.i
+.PHONY : DrawAction.cpp.i
+
+DrawAction.s: DrawAction.cpp.s
+
+.PHONY : DrawAction.s
+
+# target to generate assembly for a file
+DrawAction.cpp.s:
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/DrawAction.cpp.s
+.PHONY : DrawAction.cpp.s
 
 GameManager.obj: GameManager.cpp.obj
 
@@ -293,12 +374,21 @@ help:
 	@echo ... LittleDot
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Action.obj
+	@echo ... Action.i
+	@echo ... Action.s
 	@echo ... Card.obj
 	@echo ... Card.i
 	@echo ... Card.s
 	@echo ... Discard.obj
 	@echo ... Discard.i
 	@echo ... Discard.s
+	@echo ... DiscardAction.obj
+	@echo ... DiscardAction.i
+	@echo ... DiscardAction.s
+	@echo ... DrawAction.obj
+	@echo ... DrawAction.i
+	@echo ... DrawAction.s
 	@echo ... GameManager.obj
 	@echo ... GameManager.i
 	@echo ... GameManager.s

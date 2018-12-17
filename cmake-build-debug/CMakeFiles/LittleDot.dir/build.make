@@ -200,6 +200,78 @@ CMakeFiles/LittleDot.dir/Discard.cpp.obj.provides: CMakeFiles/LittleDot.dir/Disc
 CMakeFiles/LittleDot.dir/Discard.cpp.obj.provides.build: CMakeFiles/LittleDot.dir/Discard.cpp.obj
 
 
+CMakeFiles/LittleDot.dir/Action.cpp.obj: CMakeFiles/LittleDot.dir/flags.make
+CMakeFiles/LittleDot.dir/Action.cpp.obj: ../Action.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\fbeze\Desktop\LittleDot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LittleDot.dir/Action.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LittleDot.dir\Action.cpp.obj -c C:\Users\fbeze\Desktop\LittleDot\Action.cpp
+
+CMakeFiles/LittleDot.dir/Action.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LittleDot.dir/Action.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\fbeze\Desktop\LittleDot\Action.cpp > CMakeFiles\LittleDot.dir\Action.cpp.i
+
+CMakeFiles/LittleDot.dir/Action.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LittleDot.dir/Action.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fbeze\Desktop\LittleDot\Action.cpp -o CMakeFiles\LittleDot.dir\Action.cpp.s
+
+CMakeFiles/LittleDot.dir/Action.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LittleDot.dir/Action.cpp.obj.requires
+
+CMakeFiles/LittleDot.dir/Action.cpp.obj.provides: CMakeFiles/LittleDot.dir/Action.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/Action.cpp.obj.provides.build
+.PHONY : CMakeFiles/LittleDot.dir/Action.cpp.obj.provides
+
+CMakeFiles/LittleDot.dir/Action.cpp.obj.provides.build: CMakeFiles/LittleDot.dir/Action.cpp.obj
+
+
+CMakeFiles/LittleDot.dir/DrawAction.cpp.obj: CMakeFiles/LittleDot.dir/flags.make
+CMakeFiles/LittleDot.dir/DrawAction.cpp.obj: ../DrawAction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\fbeze\Desktop\LittleDot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LittleDot.dir/DrawAction.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LittleDot.dir\DrawAction.cpp.obj -c C:\Users\fbeze\Desktop\LittleDot\DrawAction.cpp
+
+CMakeFiles/LittleDot.dir/DrawAction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LittleDot.dir/DrawAction.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\fbeze\Desktop\LittleDot\DrawAction.cpp > CMakeFiles\LittleDot.dir\DrawAction.cpp.i
+
+CMakeFiles/LittleDot.dir/DrawAction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LittleDot.dir/DrawAction.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fbeze\Desktop\LittleDot\DrawAction.cpp -o CMakeFiles\LittleDot.dir\DrawAction.cpp.s
+
+CMakeFiles/LittleDot.dir/DrawAction.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LittleDot.dir/DrawAction.cpp.obj.requires
+
+CMakeFiles/LittleDot.dir/DrawAction.cpp.obj.provides: CMakeFiles/LittleDot.dir/DrawAction.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/DrawAction.cpp.obj.provides.build
+.PHONY : CMakeFiles/LittleDot.dir/DrawAction.cpp.obj.provides
+
+CMakeFiles/LittleDot.dir/DrawAction.cpp.obj.provides.build: CMakeFiles/LittleDot.dir/DrawAction.cpp.obj
+
+
+CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj: CMakeFiles/LittleDot.dir/flags.make
+CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj: ../DiscardAction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\fbeze\Desktop\LittleDot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LittleDot.dir\DiscardAction.cpp.obj -c C:\Users\fbeze\Desktop\LittleDot\DiscardAction.cpp
+
+CMakeFiles/LittleDot.dir/DiscardAction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LittleDot.dir/DiscardAction.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\fbeze\Desktop\LittleDot\DiscardAction.cpp > CMakeFiles\LittleDot.dir\DiscardAction.cpp.i
+
+CMakeFiles/LittleDot.dir/DiscardAction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LittleDot.dir/DiscardAction.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\fbeze\Desktop\LittleDot\DiscardAction.cpp -o CMakeFiles\LittleDot.dir\DiscardAction.cpp.s
+
+CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj.requires
+
+CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj.provides: CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LittleDot.dir\build.make CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj.provides.build
+.PHONY : CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj.provides
+
+CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj.provides.build: CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj
+
+
 # Object files for target LittleDot
 LittleDot_OBJECTS = \
 "CMakeFiles/LittleDot.dir/main.cpp.obj" \
@@ -207,7 +279,10 @@ LittleDot_OBJECTS = \
 "CMakeFiles/LittleDot.dir/Pack.cpp.obj" \
 "CMakeFiles/LittleDot.dir/Card.cpp.obj" \
 "CMakeFiles/LittleDot.dir/Player.cpp.obj" \
-"CMakeFiles/LittleDot.dir/Discard.cpp.obj"
+"CMakeFiles/LittleDot.dir/Discard.cpp.obj" \
+"CMakeFiles/LittleDot.dir/Action.cpp.obj" \
+"CMakeFiles/LittleDot.dir/DrawAction.cpp.obj" \
+"CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj"
 
 # External object files for target LittleDot
 LittleDot_EXTERNAL_OBJECTS =
@@ -218,11 +293,14 @@ LittleDot.exe: CMakeFiles/LittleDot.dir/Pack.cpp.obj
 LittleDot.exe: CMakeFiles/LittleDot.dir/Card.cpp.obj
 LittleDot.exe: CMakeFiles/LittleDot.dir/Player.cpp.obj
 LittleDot.exe: CMakeFiles/LittleDot.dir/Discard.cpp.obj
+LittleDot.exe: CMakeFiles/LittleDot.dir/Action.cpp.obj
+LittleDot.exe: CMakeFiles/LittleDot.dir/DrawAction.cpp.obj
+LittleDot.exe: CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj
 LittleDot.exe: CMakeFiles/LittleDot.dir/build.make
 LittleDot.exe: CMakeFiles/LittleDot.dir/linklibs.rsp
 LittleDot.exe: CMakeFiles/LittleDot.dir/objects1.rsp
 LittleDot.exe: CMakeFiles/LittleDot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\fbeze\Desktop\LittleDot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable LittleDot.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\fbeze\Desktop\LittleDot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable LittleDot.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LittleDot.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -236,6 +314,9 @@ CMakeFiles/LittleDot.dir/requires: CMakeFiles/LittleDot.dir/Pack.cpp.obj.require
 CMakeFiles/LittleDot.dir/requires: CMakeFiles/LittleDot.dir/Card.cpp.obj.requires
 CMakeFiles/LittleDot.dir/requires: CMakeFiles/LittleDot.dir/Player.cpp.obj.requires
 CMakeFiles/LittleDot.dir/requires: CMakeFiles/LittleDot.dir/Discard.cpp.obj.requires
+CMakeFiles/LittleDot.dir/requires: CMakeFiles/LittleDot.dir/Action.cpp.obj.requires
+CMakeFiles/LittleDot.dir/requires: CMakeFiles/LittleDot.dir/DrawAction.cpp.obj.requires
+CMakeFiles/LittleDot.dir/requires: CMakeFiles/LittleDot.dir/DiscardAction.cpp.obj.requires
 
 .PHONY : CMakeFiles/LittleDot.dir/requires
 

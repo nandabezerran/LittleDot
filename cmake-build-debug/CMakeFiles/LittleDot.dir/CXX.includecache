@@ -14,13 +14,33 @@ C:/Users/fbeze/Desktop/LittleDot/Card.h
 iostream
 -
 
+C:/Users/fbeze/Desktop/LittleDot/Discard.cpp
+Discard.h
+C:/Users/fbeze/Desktop/LittleDot/Discard.h
+
+C:/Users/fbeze/Desktop/LittleDot/Discard.h
+stack
+-
+Card.h
+C:/Users/fbeze/Desktop/LittleDot/Card.h
+
 C:/Users/fbeze/Desktop/LittleDot/GameManager.cpp
 GameManager.h
 C:/Users/fbeze/Desktop/LittleDot/GameManager.h
+sstream
+-
+string
+-
+iostream
+-
+cstring
+-
 
 C:/Users/fbeze/Desktop/LittleDot/GameManager.h
 Pack.h
 C:/Users/fbeze/Desktop/LittleDot/Pack.h
+Discard.h
+C:/Users/fbeze/Desktop/LittleDot/Discard.h
 Player.h
 C:/Users/fbeze/Desktop/LittleDot/Player.h
 iostream
@@ -48,6 +68,8 @@ C:/Users/fbeze/Desktop/LittleDot/Player.h
 Card.h
 C:/Users/fbeze/Desktop/LittleDot/Card.h
 iostream
+-
+vector
 -
 
 C:/Users/fbeze/Desktop/LittleDot/main.cpp

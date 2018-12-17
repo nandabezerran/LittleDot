@@ -4,8 +4,13 @@
 CMakeFiles/LittleDot.dir/Card.cpp.obj
  C:/Users/fbeze/Desktop/LittleDot/Card.cpp
  C:/Users/fbeze/Desktop/LittleDot/Card.h
+CMakeFiles/LittleDot.dir/Discard.cpp.obj
+ C:/Users/fbeze/Desktop/LittleDot/Card.h
+ C:/Users/fbeze/Desktop/LittleDot/Discard.cpp
+ C:/Users/fbeze/Desktop/LittleDot/Discard.h
 CMakeFiles/LittleDot.dir/GameManager.cpp.obj
  C:/Users/fbeze/Desktop/LittleDot/Card.h
+ C:/Users/fbeze/Desktop/LittleDot/Discard.h
  C:/Users/fbeze/Desktop/LittleDot/GameManager.cpp
  C:/Users/fbeze/Desktop/LittleDot/GameManager.h
  C:/Users/fbeze/Desktop/LittleDot/Pack.h
@@ -20,6 +25,7 @@ CMakeFiles/LittleDot.dir/Player.cpp.obj
  C:/Users/fbeze/Desktop/LittleDot/Player.h
 CMakeFiles/LittleDot.dir/main.cpp.obj
  C:/Users/fbeze/Desktop/LittleDot/Card.h
+ C:/Users/fbeze/Desktop/LittleDot/Discard.h
  C:/Users/fbeze/Desktop/LittleDot/GameManager.h
  C:/Users/fbeze/Desktop/LittleDot/Pack.h
  C:/Users/fbeze/Desktop/LittleDot/Player.h

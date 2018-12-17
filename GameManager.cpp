@@ -4,6 +4,9 @@
 #define NUMBER_OF_THE_CARD 8
 #define SUIT_OF_THE_CARD 10
 #include "GameManager.h"
+#include "DrawAction.h"
+#include "DiscardAction.h"
+#include <algorithm>
 #include <sstream>
 #include <string>
 #include <iostream>
@@ -14,7 +17,9 @@ GameManager::GameManager(){
     //Create the pack
     pack = new Pack();
     discard = new Discard();
-    possibleActions.emplace_back("DRAW");
+    existingActions.emplace_back(new DrawAction(this));
+    existingActions.emplace_back(new DiscardAction(this));
+    setInitialActions();
 }
 
 void GameManager::init(int pPlayers) {
@@ -58,56 +63,72 @@ string GameManager::getState(int pPlayerId) {
     result = result + " ] }";
     return result;
 }
-
+//DRAW() DISCARD(7 hearts)
 bool GameManager::takeAction(int pPlayerId, string pAction) {
-    if(currPlayer != pPlayerId){
+    if(currPlayer != pPlayerId) {
+        return false;
+    }
+    unsigned int parStart = pAction.find('(');
+    unsigned int parEnd   = pAction.find(')');
+    bool actionResult;
+
+    if(parStart == std::string::npos || parEnd == std::string::npos){
         return false;
     }
 
-    //TODO implement when we have more actions
-    /*for (int i = 0; i < possibleActions.size(); ++i) {
-        if(pAction.compare(0, possibleActions[i].length(), possibleActions[i]) == 0){
+    string parameter = pAction.substr(parStart+1,parEnd - parStart);
 
+    //go through actions and find action to be taken
+    for (auto &possibleAction : possibleActions) {
+        const string& actionName = possibleAction->getName();
+        if(pAction.compare(0, actionName.length(), actionName) == 0){
+            actionResult = possibleAction->takeAction(parameter, players[pPlayerId]);
+            if (possibleAction->isFinal()){
+                currPlayer = (currPlayer+1)%nPlayers;
+                setInitialActions();
+            }
+            return actionResult;
         }
-    }*/
-
-    //TEMP
-    if (pAction.compare(0, 4, "DRAW") == 0){
-        players[pPlayerId]->receiveCard(pack->drawCard());
-        possibleActions.clear();
-        possibleActions.emplace_back("DISCARD");
-
-        return true;
-    }
-
-    //DISCARD 7 hearts -> this is the discard parameter format
-    else if (pAction.compare(0, 7, "DISCARD") == 0){
-        //TODO improve read the discard parameters
-        //read the discard parameters
-        size_t pos = 0;
-        string token;
-        string delimiter = " ";
-        while ((pos = pAction.find(delimiter)) != std::string::npos) {
-            discardParameters.push_back(pAction.substr(0, pos));
-            pAction.erase(0, pos + delimiter.length());
-        }
-        discardParameters.push_back(pAction.substr(0, pos));
-
-        //Implement the discard
-        if(players[pPlayerId]->searchCard(discardParameters) == nullptr){
-            return false;
-        }
-
-        discard->discardCard(players[pPlayerId]->searchCard(discardParameters));
-        players[pPlayerId]->removeCard(players[pPlayerId]->searchCard(discardParameters));
-
-        possibleActions.clear();
-        possibleActions.emplace_back("DRAW");
-        currPlayer = (currPlayer + 1) % nPlayers;
-
-
-        return true;
     }
 
     return false;
+}
+
+Player *GameManager::getPlayer(int pPlayerId) {
+    return players[pPlayerId];
+}
+
+Pack *GameManager::getPack() {
+    return pack;
+}
+
+void GameManager::addPossibleAction(Action *pAction) {
+    possibleActions.emplace_back(pAction);
+}
+
+void GameManager::removePossibleAction(Action *pAction) {
+    possibleActions.erase(std::find(possibleActions.begin(), possibleActions.end(), pAction));
+
+}
+
+Discard *GameManager::getDiscard() {
+    return discard;
+}
+
+void GameManager::setInitialActions() {
+    for (auto &existingAction : existingActions) {
+        if (existingAction->isInitial()) {
+            addPossibleAction(existingAction);
+        }
+    }
+
+}
+
+Action *GameManager::getAction(const string& pActionName) {
+    for (auto &existingAction : existingActions) {
+        if (existingAction->getName() == pActionName) {
+            return existingAction;
+        }
+    }
+    return nullptr;
 }

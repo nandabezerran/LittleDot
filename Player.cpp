@@ -38,10 +38,10 @@ string Player::getVisibleState() {
     return result;
 }
 
-Card *Player::searchCard(vector<string> pDiscardParameters) {
+Card *Player::searchCard(int pNumber, const string& pSuit) {
     for (int i = 0; i < nCards; ++i) {
-        if (hand[i]->value == atoi(pDiscardParameters[1].c_str())){
-           if(Card::suits[hand[i]->suit] == pDiscardParameters[2]){
+        if (hand[i]->value == pNumber){
+           if(Card::suits[hand[i]->suit] == pSuit){
                return hand[i];
            }
         }

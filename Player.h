@@ -18,7 +18,7 @@ public:
     void receiveCard(Card* card);
     string getHandState();
     string getVisibleState();
-    Card* searchCard(vector<string> pDiscardParameters);
+    Card* searchCard(int pNumber, const string& pSuit);
     bool removeCard(Card* pCard);
 
 private:
