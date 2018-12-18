@@ -15,14 +15,26 @@ int main() {
     cout << gameManager.getState(0) << endl << endl;
 
     //Executing the action of drawing and Discard
-    string discardCard;
+    string cardToDiscard;
+    string discardAction;
+    bool result;
+
     for (int i = 0; i < nPlayers ; ++i) {
-        gameManager.takeAction(i, "DRAW");
-        getline (cin, discardCard);
-        gameManager.takeAction(i, discardCard);
+        discardAction = "DISCARD(";
+        result = gameManager.takeAction(i, "DRAW()");
+        if(!result) {
+            cout << "Invalid draw action!" << endl;
+        }
+        cout << gameManager.getState(i) << endl << endl;
+        getline (cin, cardToDiscard);
+        discardAction += cardToDiscard;
+        discardAction += ")";
+        result = gameManager.takeAction(i, discardAction);
+        if(!result) {
+            cout << "Invalid discard action!" << endl;
+        }
         cout << gameManager.getState(i) << endl << endl;
     }
-
 
     return 0;
 }

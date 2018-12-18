@@ -3,6 +3,7 @@
 //
 
 #include "Action.h"
+#include "GameManager.h"
 
 const string & Action::getName() {
     return name;
@@ -13,6 +14,9 @@ Action::Action(GameManager *pGameManager, const string& pName) : gameManager(pGa
 void Action::afterAction() {
     if (onlyOnce){
         gameManager->removePossibleAction(this);
+    }
+    for(auto &followingAction : followingActions) {
+        gameManager->addPossibleAction(followingAction);
     }
 }
 

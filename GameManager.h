@@ -20,7 +20,6 @@ public:
     void init(int pPlayers);
     string getState(int pPlayerId);
     bool takeAction(int pPlayerId, string pAction);
-    vector<string> discardParameters;
     Player* getPlayer(int pPlayerId);
     Pack* getPack();
     void addPossibleAction(Action* pAction);
@@ -34,7 +33,6 @@ private:
     Player** players;
     int nPlayers;
     int currPlayer;
-    int nPossibleActions;
     vector<Action*> possibleActions;
     vector<Action*> existingActions;
 

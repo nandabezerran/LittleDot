@@ -3,6 +3,7 @@
 //
 
 #include "DrawAction.h"
+#include "GameManager.h"
 
 DrawAction::DrawAction(GameManager *pGameManager) : Action(pGameManager, "DRAW") {
     initialAction = true;
@@ -16,5 +17,6 @@ bool DrawAction::takeAction(string pParameters, Player *pPlayer) {
 }
 
 void DrawAction::init() {
-
+    auto discardAction = gameManager->getAction("DISCARD");
+    followingActions.emplace_back(discardAction);
 }

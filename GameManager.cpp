@@ -34,9 +34,17 @@ void GameManager::init(int pPlayers) {
             players[i]->receiveCard(pack->drawCard());
         }
     }
+
+    // Init all actions
+    for (auto &action : existingActions) {
+        action->init();
+    }
+
     //TODO first player random
     //TODO when turns are implemented keep increasing the first player of each turn
     currPlayer = 0;
+
+
 }
 
 string GameManager::getState(int pPlayerId) {
@@ -63,6 +71,7 @@ string GameManager::getState(int pPlayerId) {
     result = result + " ] }";
     return result;
 }
+
 //DRAW() DISCARD(7 hearts)
 bool GameManager::takeAction(int pPlayerId, string pAction) {
     if(currPlayer != pPlayerId) {
@@ -76,10 +85,11 @@ bool GameManager::takeAction(int pPlayerId, string pAction) {
         return false;
     }
 
-    string parameter = pAction.substr(parStart+1,parEnd - parStart);
+    string parameter = pAction.substr(parStart+1,parEnd - (parStart+1));
 
     //go through actions and find action to be taken
-    for (auto &possibleAction : possibleActions) {
+    auto currPossibleActions = possibleActions;
+    for (auto &possibleAction : currPossibleActions) {
         const string& actionName = possibleAction->getName();
         if(pAction.compare(0, actionName.length(), actionName) == 0){
             actionResult = possibleAction->takeAction(parameter, players[pPlayerId]);

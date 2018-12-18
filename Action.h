@@ -5,9 +5,10 @@
 #ifndef LITTLEDOT_ACTION_H
 #define LITTLEDOT_ACTION_H
 
+#include "Player.h"
 
+class GameManager;
 
-#include "GameManager.h"
 
 class Action {
 public:
@@ -18,7 +19,6 @@ public:
     virtual void afterAction();
     bool isFinal();
     bool isInitial();
-    vector <>
 
 
 protected:
@@ -27,7 +27,7 @@ protected:
     bool initialAction {false};
     bool onlyOnce {false};
     bool finalAction {false};
-    vector<Action*> preRequired;
+    vector<Action*> followingActions;
 };
 
 

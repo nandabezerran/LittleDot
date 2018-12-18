@@ -2,7 +2,9 @@
 // Created by fbeze on 17/12/2018.
 //
 
+#include <c++/functional>
 #include "DiscardAction.h"
+#include "GameManager.h"
 
 DiscardAction::DiscardAction(GameManager *pGameManager) : Action(pGameManager, "DISCARD") {
     onlyOnce = true;
@@ -40,9 +42,9 @@ bool DiscardAction::takeAction(string pParameters, Player *pPlayer){
 
 }
 
+
+
 void DiscardAction::init() {
-    Action* preReq = gameManager->getAction("DRAW");
-    if (preReq != nullptr){
-        preRequired.emplace_back();
-    }
+
 }
+
